@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MATH 101 practice questions and worked solutions.">
+  <title>MATH 101 Exam 1 Practice</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>MATH 101 Exam 1 Practice</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Practice controls">
+      <label for="topic">Practice</label>
+      <select id="topic">
+        <option value="exam">Exam-style rotation</option>
+        <optgroup label="Equations">
+          <option value="equations">Solve a linear equation</option>
+          <option value="fractions">Solve an equation with fractions</option>
+          <option value="systems">Solve a system</option>
+        </optgroup>
+        <optgroup label="Lines and graphs">
+          <option value="line-paired">Parallel and perpendicular lines</option>
+          <option value="line-points">Line through two points</option>
+          <option value="line-graph">Graph a line</option>
+          <option value="quadratic">Graph a quadratic from a table</option>
+          <option value="domain">Domain from a graph</option>
+          <option value="inequality">Graph an inequality</option>
+        </optgroup>
+        <optgroup label="Functions and number skills">
+          <option value="evaluate">Evaluate a function</option>
+          <option value="exponents">Simplify exponents</option>
+          <option value="scientific">Scientific notation</option>
+          <option value="absolute">Absolute value</option>
+        </optgroup>
+        <option value="applications">Application problem</option>
+      </select>
+      <button class="secondary" id="newQuestion" type="button">New question</button>
+    </section>
+
+    <article class="problem-card">
+      <div class="card-heading">
+        <span id="topicLabel" class="tag">Mixed review</span>
+        <span id="problemNumber" class="problem-number">Question 1</span>
+      </div>
+      <div id="question" class="question"></div>
+      <button class="primary" id="showSolution" type="button" aria-expanded="false">Show detailed solution</button>
+
+      <section id="solution" class="solution" hidden aria-live="polite">
+        <div class="solution-title">Solution</div>
+        <div id="solutionBody"></div>
+      </section>
+    </article>
+
+  </main>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
