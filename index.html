@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MATH 101 Exam 1 and Exam 2 randomized practice with worked solutions.">
+<title>MATH 101 | Study Hub</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="stylesheet" href="styles.css?v=hub-3">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">
+      <h1 id="brandTitle">MATH 101</h1>
+      <p id="brandDescription">Your course resources, practice, and exam preparation in one place.</p>
+    </div>
+    <div class="side-label">PRACTICE TOPICS</div><button class="exam-rotate" id="examRotation" type="button">Exam-style rotation</button>
+    <div class="side-list" id="sidebar"></div>
+  </aside>
+
+  <main>
+    <nav class="exam-tabs" aria-label="Main navigation">
+      <button class="exam-tab" data-exam="home" type="button">Home</button>
+      <button class="exam-tab" data-exam="exams" type="button">Exams</button>
+      <button class="exam-tab" data-exam="syllabus" type="button">Course Info</button>
+      <button class="exam-tab" data-exam="calculator" type="button">Grade Calculator</button>
+      <button class="exam-tab" data-exam="feedback" type="button">Feedback</button>
+    </nav>
+    <section id="homePage" class="hub-section" hidden>
+      <div class="hub-hero"><div class="eyebrow">MATH 101 · SECTIONS 12 &amp; 29</div><h2>Course resources</h2><p>Exam PDFs, practice questions, course essentials, and links—all in one place.</p><div class="hero-links"><a class="action primary" href="https://brightspace.cuny.edu/" target="_blank" rel="noopener">Brightspace ↗</a><a class="action secondary" href="https://ohm.lumenlearning.com/" target="_blank" rel="noopener">Lumen / OHM ↗</a></div></div>
+      <div class="hub-grid">
+        <article class="hub-tile"><h3>Exams</h3><p>Practice, mock tests, and extra-credit PDFs organized by exam.</p><button type="button" class="text-link" data-go="exams">View exams →</button></article>
+        <article class="hub-tile"><h3>Classwork &amp; recordings</h3><p>All classwork sheets and available class recordings are on Brightspace.</p><a href="https://brightspace.cuny.edu/" target="_blank" rel="noopener">Open Brightspace ↗</a></article>
+      </div>
+      <div class="home-detail-grid">
+        <article class="home-info"><h3>Where to find your work</h3><p><strong>Brightspace:</strong> classwork, available lecture recordings, announcements, and official grades.</p><p><strong>Lumen/OHM:</strong> homework, online quizzes, and the interactive textbook.</p></article>
+        <article class="home-info"><h3>How to prepare</h3><p>Start with the extra-credit PDFs and mock exams under <strong>Exams</strong>. Show your steps, check the provided answers, and retry questions you miss.</p><p>Use interactive practice for fresh problems with worked explanations.</p></article>
+      </div>
+      <div class="home-info home-grade"><h3>How your grade is calculated</h3><div class="weight-row"><span>Exams <b>75%</b></span><span>Homework <b>15%</b></span><span>Quizzes <b>5%</b></span><span>Classwork <b>5%</b></span></div><p>Four exams and a final worth two exam scores; the lowest of the six scores is dropped. See <button class="inline-nav" type="button" data-go="syllabus">Course Info</button> for details.</p></div>
+    </section>
+    <section id="examsPage" class="hub-section" hidden>
+      <div class="section-heading"><h2>Exams</h2><p>Select an exam to find its PDFs and practice.</p></div>
+      <div class="exam-tabs exam-subtabs" role="group" aria-label="Select exam">
+        <button type="button" class="exam-subtab active" data-exam-panel="1">Exam 1</button>
+        <button type="button" class="exam-subtab" data-exam-panel="2">Exam 2</button>
+        <button type="button" class="exam-subtab" data-exam-panel="3">Exam 3</button>
+        <button type="button" class="exam-subtab" data-exam-panel="4">Exam 4</button>
+        <button type="button" class="exam-subtab" data-exam-panel="final">Final</button>
+      </div>
+      <div id="examPanel1" class="exam-resource-panel">
+        <div class="resource-grid">
+          <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Extra Credit · Exam 1</h3><p>50 questions. Show complete handwritten work; answers alone do not earn credit.</p><a class="action primary" href="resources/Exam_1_Extra_Credit.pdf" target="_blank" rel="noopener">Open extra-credit PDF ↓</a></article>
+          <article class="card resource-card"><h3>Interactive practice</h3><p>New Exam 1 questions with step-by-step solutions.</p><button class="action secondary" type="button" data-go="1">Practice Exam 1 →</button></article>
+        </div>
+      </div>
+      <div id="examPanel2" class="exam-resource-panel" hidden>
+        <div class="resource-grid">
+          <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Extra Credit · Exam 2</h3><p>50 questions. Show complete handwritten work; answers alone do not earn credit.</p><a class="action primary" href="resources/Exam_2_Extra_Credit.pdf" target="_blank" rel="noopener">Open extra-credit PDF ↓</a></article>
+          <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Mock Test · Exam 2</h3><p>Try the blank copy before checking the worked version.</p><div class="resource-actions"><a class="action secondary" href="resources/Exam_2_Mock_Blank.pdf" target="_blank" rel="noopener">Blank PDF ↓</a><a class="action secondary" href="resources/Exam_2_Mock_Worked_Solutions.pdf" target="_blank" rel="noopener">Worked PDF ↓</a></div></article>
+          <article class="card resource-card"><h3>Interactive practice</h3><p>New Exam 2 questions with step-by-step solutions.</p><button class="action secondary" type="button" data-go="2">Practice Exam 2 →</button></article>
+        </div>
+      </div>
+      <div id="examPanel3" class="exam-resource-panel" hidden>
+        <div class="resource-grid">
+          <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Extra Credit · Exam 3</h3><p><strong>+1 point:</strong> Complete all 30 supplied questions with handwritten work. Answers are provided in the PDF.</p><p><strong>+2 points:</strong> Create 20 similar questions and solve each with handwritten work.</p><p><strong>3 points total.</strong> You may ask a friend, classmate, tutor, or ChatGPT for help generating similar problems or checking answers. Try to create and solve them yourself first; submit your own handwritten work.</p><a class="action primary" href="resources/Exam_3_Extra_Credit_30_Questions.pdf" target="_blank" rel="noopener">Open extra-credit PDF ↓</a></article>
+          <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Mock Test · Exam 3</h3><p>17 new questions in the same three-page format as the exams. Practice first without notes.</p><a class="action secondary" href="resources/Exam_3_Mock_Blank.pdf" target="_blank" rel="noopener">Blank Mock Test ↓</a></article>
+          <article class="card resource-card"><h3>Interactive practice · Exam 3</h3><p>17 question types with new numbers, full answers, and worked explanations.</p><button class="action secondary" type="button" data-go="3">Practice Exam 3 →</button></article>
+        </div>
+      </div>
+      <div id="examPanel4" class="exam-resource-panel" hidden><div class="resource-grid">
+        <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Extra Credit · Exam 4</h3><p><strong>+1 point:</strong> Complete all 25 provided questions, showing handwritten work. Answers are included for checking.</p><p><strong>+2 points:</strong> Create and solve 25 similar questions with handwritten work.</p><p><strong>3 points total.</strong> You may get help generating or checking questions, but submit your own work.</p><a class="action primary" href="resources/Exam_4_Extra_Credit_25_Questions.pdf" target="_blank" rel="noopener">Open extra-credit PDF ↓</a></article>
+        <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Mock Test · Exam 4</h3><p>17 exam-style questions. Try the blank mock before checking your work with the interactive explanations.</p><a class="action secondary" href="resources/Exam_4_Mock.pdf" target="_blank" rel="noopener">Blank Mock Test ↓</a></article>
+        <article class="card resource-card"><h3>Interactive practice · Exam 4</h3><p>17 types with fresh numbers, worked answers, and step-by-step explanations.</p><button class="action secondary" type="button" data-go="4">Practice Exam 4 →</button></article>
+      </div></div>
+      <div id="examPanelfinal" class="exam-resource-panel" hidden><div class="resource-grid">
+        <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Extra Credit · Final Exam</h3><p><strong>+1 point:</strong> Complete all 20 provided questions with handwritten work. Answers are included for checking.</p><p><strong>+1 point:</strong> Create and solve 30 similar questions with handwritten work.</p><p><strong>2 points total.</strong> The final extra credit is limited to 2 points because of department guidelines. You may seek help, but submit your own work.</p><a class="action primary" href="resources/Final_Extra_Credit_20_Questions.pdf" target="_blank" rel="noopener">Open extra-credit PDF ↓</a></article>
+        <article class="card resource-card"><div class="resource-tag">PDF</div><h3>Mock Final Exam</h3><p>20 questions covering the final exam topics. This is a practice test, not an actual exam form.</p><a class="action secondary" href="resources/Final_Mock.pdf" target="_blank" rel="noopener">Blank Mock Test ↓</a></article>
+        <article class="card resource-card"><h3>Interactive practice · Final</h3><p>20 question types with similar problems, new numbers, and detailed worked explanations.</p><button class="action secondary" type="button" data-go="final">Practice Final →</button></article>
+      </div></div>
+    </section>
+    <section id="syllabusPage" class="hub-section" hidden>
+      <div class="section-heading"><h2>Course essentials</h2><p>A shorter version of the syllabus. For full policies and official updates, use Brightspace.</p></div>
+      <div class="course-layout">
+        <article class="card"><div class="resource-tag">GRADING</div><h3>Course grade breakdown</h3><div class="weight-list"><div><span>Exams</span><strong>75%</strong></div><div><span>Online homework</span><strong>15%</strong></div><div><span>Online quizzes</span><strong>5%</strong></div><div><span>Classwork</span><strong>5%</strong></div></div><p class="fineprint">There are four exams and a final. The final counts as two exam scores. The lowest of the six scores is dropped, and the remaining five are averaged.</p></article>
+        <article class="card"><div class="resource-tag">COURSE TOOLS</div><h3>Assignments and materials</h3><p><strong>Lumen/OHM:</strong> homework and online quizzes. Homework typically follows the next lecture; always check the posted due date.</p><p><strong>Brightspace:</strong> classwork sheets, available lecture recordings, announcements, and grades.</p><div class="resource-actions"><a class="action secondary" href="https://ohm.lumenlearning.com/" target="_blank" rel="noopener">Lumen/OHM ↗</a><a class="action secondary" href="https://brightspace.cuny.edu/" target="_blank" rel="noopener">Brightspace ↗</a></div></article>
+        <article class="card"><div class="resource-tag">EXAMS</div><h3>What to expect</h3><p>Show your work on exams. Scientific calculators are allowed; graphing calculators, phones, and sharing calculators are not allowed.</p><p>For a planned excused conflict, contact your instructor at least two weeks in advance. For an unexpected absence, contact your instructor immediately.</p></article>
+        <article class="card"><div class="resource-tag">SUPPORT</div><h3>Get help</h3><p>Office hours are available by appointment. The Dolciani Math Learning Center offers tutoring on Hunter East's 7th floor.</p><p><strong>Instructor:</strong> David Martinez<br><a href="mailto:david.martinez62@login.cuny.edu">david.martinez62@login.cuny.edu</a></p></article>
+      </div>
+      <p class="course-footnote">This overview applies generally to Math 101; your section's official syllabus and Brightspace take precedence.</p>
+    </section>
+    <section id="feedbackPage" class="hub-section" hidden><div class="section-heading"><h2>Anonymous feedback</h2><p>Suggestions form coming soon. Please do not send personal or grade information.</p></div></section>
+
+    <div class="topbar" id="examHeading">
+      <div>
+        <h2 id="title">Parallel &amp; perpendicular lines</h2>
+      </div>
+      <div class="badge" id="progress">0 / 17 types practiced</div>
+    </div>
+
+    <section class="card" id="examCard">
+      <div class="eyebrow" id="qnum">QUESTION 1 OF 17</div>
+      <div class="prompt" id="question"></div>
+      <div class="instructions" id="instructions"></div>
+      <div class="actions">
+        <button class="action primary" id="newQuestion" type="button">New question</button>
+        <button class="action secondary" id="showSolution" type="button" aria-expanded="false">Show detailed solution</button>
+        <button class="action dark" id="randomType" type="button">Random type</button>
+      </div>
+      <section class="solution" id="solution" hidden aria-live="polite">
+        <h3>Detailed solution</h3>
+        <div id="solutionBody"></div>
+      </section>
+    </section>
+
+    <section id="gradeCalculator" hidden>
+      <div class="card grade-card">
+        <h2>Course Grade Calculator</h2>
+        <p>Enter your scores to estimate your course grade. Exams can go up to 102.</p>
+        <h3>Exams <small>75% of course grade</small></h3>
+        <div class="grade-grid">
+          <label>Exam 1 <input id="gc-exam1" type="number" min="0" max="102" step="any" placeholder="Not entered"></label>
+          <label>Exam 2 <input id="gc-exam2" type="number" min="0" max="102" step="any" placeholder="Not entered"></label>
+          <label>Exam 3 <input id="gc-exam3" type="number" min="0" max="102" step="any" placeholder="Not entered"></label>
+          <label>Exam 4 <input id="gc-exam4" type="number" min="0" max="102" step="any" placeholder="Not entered"></label>
+          <label>Final Exam <input id="gc-final" type="number" min="0" max="102" step="any" placeholder="Not entered"></label>
+        </div>
+        <p class="grade-help">Final counts twice; lowest exam score is dropped.</p>
+        <h3>Other course grades</h3>
+        <div class="grade-grid">
+          <label>Online Homework <small>out of 15</small><input id="gc-homework" type="number" min="0" max="15" step="any" placeholder="Not entered"></label>
+          <label>Classwork <small>out of 5</small><input id="gc-classwork" type="number" min="0" max="5" step="any" placeholder="Not entered"></label>
+          <label>Online Quizzes <small>out of 5</small><input id="gc-quizzes" type="number" min="0" max="5" step="any" placeholder="Not entered"></label>
+        </div>
+        <p class="grade-help grade-attendance-note"><strong>Classwork:</strong> If you attend most classes, you can generally expect close to 5 out of 5. I track attendance. If you rarely attend, expect close to 0. Otherwise, estimate your score based on your attendance and completed classwork.</p>
+        <div id="gc-error" class="grade-error" role="alert" hidden></div>
+        <div class="grade-result" aria-live="polite">
+          <div><span>Estimated final course grade</span><strong id="gc-grade">0.00%</strong><span id="gc-letter">F</span></div>
+          <div><span>Exam category average</span><strong id="gc-examavg">0.00%</strong><span id="gc-dropped">Dropped: —</span></div>
+        </div>
+        <p id="gc-breakdown" class="grade-help"></p>
+        <p class="grade-help">Estimate only. Blank scores count as 0.</p>
+        <h3>What grade do I need?</h3>
+        <div class="grade-thresholds"><div><strong>D 60%</strong><span>Pass / earn credit</span></div><div><strong>C 70%</strong><span>For STAT 113, MATH 104, MATH 12400</span></div><div><strong>B− 80%</strong><span>For direct entry to MATH 12550</span></div></div>
+        <p class="grade-help">Course requirements may vary by program.</p>
+        <button id="gc-reset" class="action secondary" type="button">Clear all scores</button>
+      </div>
+    </section>
+
+    <section id="foundations" hidden>
+      <h2>Multiplication &amp; Factors</h2>
+      <p class="foundation-intro">Start with multiplication, then learn factors. Move on to GCF and LCM when you feel ready.</p>
+      <nav class="foundation-tabs" aria-label="Number practice topics">
+        <button class="action primary" data-foundation="table" type="button">1. Multiplication</button>
+        <button class="action secondary" data-foundation="factors" type="button">2. Factors &amp; pairs</button>
+        <button class="action secondary" data-foundation="common" type="button">3. GCF &amp; LCM</button>
+      </nav>
+      <section class="card foundation-panel" id="foundation-table">
+        <h3>Multiplication</h3>
+        <p>Multiplying two integers gives their product. For example, 3 × 4 = 12.</p>
+        <details><summary>Open the multiplication table (1–12)</summary>
+          <div id="multiplicationFact" class="number-result" aria-live="polite">3 × 4 = 12</div>
+          <p>Choose a cell to see the multiplication fact. Scroll sideways on a small screen.</p>
+          <div class="table-scroll" id="multiplicationTable" tabindex="0" role="region" aria-label="Scrollable multiplication table"></div>
+        </details>
+        <details><summary>How do negative signs work?</summary><p>The same signs give a positive product: (−3) × (−4) = 12. Different signs give a negative product: (−3) × 4 = −12.</p></details>
+      </section>
+      <section class="card foundation-panel" id="foundation-factors" hidden>
+        <h3>Factors &amp; pairs</h3>
+        <p>A <strong>factor</strong> divides a number evenly. A <strong>factor pair</strong> is two integers whose product is that number. For 12, one pair is 3 and 4.</p>
+        <details><summary>Explore the factors of a number</summary>
+          <label for="factorNumber">Enter a positive or negative integer</label>
+          <div class="number-controls"><input id="factorNumber" type="number" min="-10000" max="10000" step="1" value="12"><button class="action primary" id="findFactors" type="button">Show factors</button></div>
+          <div id="factorResults" aria-live="polite"></div>
+        </details>
+      </section>
+      <section class="card foundation-panel" id="foundation-common" hidden>
+        <h3>GCF &amp; LCM</h3>
+        <p><strong>GCF (also called GCD)</strong> is the greatest positive factor shared by two numbers. For 12 and 18, it is 6.</p>
+        <p>A <strong>multiple</strong> is obtained by multiplying a number by an integer. <strong>LCM</strong> is the least positive multiple shared by two numbers. For 12 and 18, it is 36.</p>
+        <details><summary>Compare factors and multiples of two numbers</summary>
+          <div class="number-controls"><label for="commonA">First number</label><input id="commonA" type="number" min="1" max="1000" value="12"><label for="commonB">Second number</label><input id="commonB" type="number" min="1" max="1000" value="18"><button class="action primary" id="compareNumbers" type="button">Compare</button></div>
+          <div id="commonResults" aria-live="polite"></div>
+        </details>
+      </section>
+      <section class="card foundation-panel" id="foundation-practice">
+        <h3>Try it yourself</h3>
+        <label for="numberPracticeMode">Practice type</label>
+        <select id="numberPracticeMode"><option value="multiply">Multiplication</option><option value="signed">Multiplication with negatives</option><option value="factors">List all positive factors</option><option value="pairs">Find a factor pair with a given sum</option><option value="gcf">GCD / GCF</option><option value="lcm">LCM</option></select>
+        <div class="number-result" id="numberPracticeQuestion"></div>
+        <label for="numberPracticeAnswer">Your answer</label>
+        <input id="numberPracticeAnswer" type="text" autocomplete="off" placeholder="Type your answer">
+        <div class="actions"><button class="action primary" id="checkNumberAnswer" type="button">Check answer</button><button class="action secondary" id="revealNumberAnswer" type="button">Show answer &amp; steps</button><button class="action dark" id="newNumberQuestion" type="button">New question</button></div>
+        <div id="numberPracticeFeedback" aria-live="polite"></div>
+      </section>
+    </section>
+  </main>
+</div>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+  svg: { fontCache: 'local' },
+  startup: { typeset: false }
+};
+</script>
+<script defer src="vendor/tex-svg.js"></script>
+<script defer src="script.js?v=hub-1"></script>
+</body>
+</html>
